@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bedtime_countdown_timer.MainPage">
+
+    <ScrollView>
+        <HorizontalStackLayout
+            HorizontalOptions="FillAndExpand">
+
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="FillAndExpand">
+
+                <Label
+                    Padding="25"
+                    Text="New"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Padding="25"
+                    Text="Bedtime"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Padding="25"
+                    Text="Duration"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Padding="25"
+                    Text="Wake-Up"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="FillAndExpand">
+
+                <Label
+                    Padding="25"
+                    Text="$Time"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Padding="25"
+                    Text="$Time"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Padding="25"
+                    Text="$Time"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <Label
+                    Padding="25"
+                    Text="$Time"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="FillAndExpand">
+
+                <Label
+                    Padding="25"
+                    Text="Remaining"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+
+                <Label
+                    Padding="25"
+                    Text="$Time"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="32"
+                    HorizontalOptions="Center" />
+
+                <HorizontalStackLayout
+                    Padding="25" >
+
+                    <CheckBox
+                        x:Name="remindCheckBox"
+                        CheckedChanged="OnRemindCheckBoxCheckedChanged"
+                        IsChecked="False" />
+                    <Label Text="Remind"
+                        FontSize="32" >
+                    </Label>
+                </HorizontalStackLayout>
+
+                <Button
+                    Text="Pause"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnPauseButtonClicked" />
+
+            </VerticalStackLayout>
+
+        </HorizontalStackLayout>
+    </ScrollView>
+
+</ContentPage>
